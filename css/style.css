@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+body {
+    background-color: #fff;
+    color: #4d4d4d;
+    font-size: 18px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/*------------------------------------------------------- Navbar Section -----------------------------------------------------------*/
+
+nav {
+    background-color: #ececec;
+    font-size: 18px;
+    color: #ececec;
+    font-weight: normal;
+    padding: 15px 0px !important;
+}
+
+.nav-item {
+    border-right: 2px solid #4d4d4d;
+    padding: 0px 15px;
+}
+
+.last-nav-item {
+    border: none;
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+
+/*-------------------------------------------------------- Banner Section ----------------------------------------------------------*/
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image {
+    min-height: 444px;
+    width: 100%;
+}
+
+.banner h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.banner-text-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header div .banner-btn {
+    color: #d52037;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 18px 45px;
+    border: none;
+    position: absolute;
+    top: 65%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+header div .banner-btn:hover {
+    cursor: pointer;
+}
+
+header div .banner-btn:focus {
+    outline: none;
+}
+
+
+/*-------------------------------------------------- About Us and Contact Us section ----------------------------------------------- */
+
+.bb-1 {
+    border-bottom: 3px solid black;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.section {
+    font-size: 36px;
+    color: #d52037;
+    font-weight: bolder;
+}
+
+.iframe-video {
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.des-learn-more {
+    text-decoration: underline;
+    color: #d52037;
+    text-decoration-color: #d52037;
+    background-color: white;
+}
+
+.des-learn-more:hover {
+    color: #d52037 !important;
+    text-decoration: underline;
+}
+
+.des-learn-more:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.contact-form {
+    background-color: #e4e4e4;
+    padding: 13px;
+    border-radius: 11px;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-submit {
+    background-color: #db1e36;
+    font-size: 18px;
+    padding: 10px 55px;
+    color: white;
+    border-radius: 10px;
+}
+
+.iframe-map {
+    border: 3px solid #db1e36;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.about-active:active,
+.contact-active:active {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+
+/*---------------------------------------------------------Learn More Modal---------------------------------------------------------*/
+
+.style-modal {
+    background-color: #fff;
+    color: #4d4d4d;
+}
+
+.style-modal-header {
+    background-color: #db1e36;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/*------------------------------------------------------------- Footer --------------------------------------------------------------*/
+
+.footer {
+    Background-color: #cecece;
+    font-size: 16px;
+}
+
+
+
+/*-----------------------------------------------------------Media Queries ----------------------------------------------------------*/
+
+/* For banner text and button responsiveness */
+
+@media screen and (max-width:780px) {
+    .banner-btn {
+        margin-top: 65px;
+    }
+}
+
+
+
+/* For handling border and padding design of navbar in less resolution*/
+
+
+@media screen and (max-width:991px) {
+    .nav-item {
+        border-right: 0px;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+/* For handling the navbar list items */
+
+@media screen and (min-width:991px) and (max-width:1224px) {
+    .media-class-nav {
+        display: flex;
+        padding: 0px;
+    }
+}
